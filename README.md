@@ -12,10 +12,11 @@ The Parameter Store module serves as a simple solution for storing application e
 This module encompasses the creation of a pipeline to deploy changes to the server upon pushing changes to the master branch of the repository. The pipeline includes application and deployment group creation, with the existing EC2 instance added to the deployment group. While auto-scaling groups can be added for scalability, this setup focuses on simplicity by including only one instance in the group.
 
 ## Usage
-Run terraform init to download and install modules, and initialize the backend.
-Use terraform validate to check the syntax and configuration of the .tf files.
-Generate an execution plan using terraform plan.
-Deploy changes to the cloud with terraform apply.
-To destroy all managed resources, run terraform destroy.
+1. Run `terraform init` to download and install modules, and initialize the backend.
+2. Use `terraform validate` to check the syntax and configuration of the .tf files.
+3. Generate an execution plan using `terraform plan`.
+4. Deploy changes to the cloud with `terraform apply`.
+To destroy all managed resources, run `terraform destroy`.
+
 
 For detailed instructions and best practices, please refer to the respective module directories.
